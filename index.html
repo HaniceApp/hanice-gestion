@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Gestion Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="logo">Gestion<span>App</span></div>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Tableau de bord</a></li>
+            <li><a href="#">Utilisateurs</a></li>
+            <li><a href="#">Projets</a></li>
+            <li><a href="#">Statistiques</a></li>
+            <li><a href="#">Paramètres</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher une donnée...">
+            </div>
+            <div class="user-profile">
+                <span class="notifications">🔔</span>
+                <div class="avatar"></div>
+                <span class="user-name">Admin Jean</span>
+            </div>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Projets</h3>
+                <p class="number">24</p>
+                <span class="trend positive">+12% ce mois</span>
+            </div>
+            <div class="stat-card">
+                <h3>Tâches en cours</h3>
+                <p class="number">08</p>
+                <span class="trend">À jour</span>
+            </div>
+            <div class="stat-card">
+                <h3>Alertes</h3>
+                <p class="number" style="color: #e74c3c;">02</p>
+                <span class="trend negative">Action requise</span>
+            </div>
+        </section>
+
+        <section class="data-section">
+            <div class="section-header">
+                <h2>Liste des activités</h2>
+                <button class="btn-primary">+ Ajouter</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Utilisateur</th>
+                        <th>Statut</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1024</td>
+                        <td>Marie Dupont</td>
+                        <td><span class="badge success">Terminé</span></td>
+                        <td>10 Mars 2026</td>
+                        <td><a href="#" class="edit">Modifier</a></td>
+                    </tr>
+                    <tr>
+                        <td>#1025</td>
+                        <td>Lucas Martin</td>
+                        <td><span class="badge warning">En attente</span></td>
+                        <td>09 Mars 2026</td>
+                        <td><a href="#" class="edit">Modifier</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
